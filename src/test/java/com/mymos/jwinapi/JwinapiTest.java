@@ -24,13 +24,34 @@ public class JwinapiTest extends TestCase {
         assert d != 0.5;
     }
 
+    public void testOnSpaceKeyPressed(){
+        for (int i = 0; i < 20; i++) {
+            Jwinapi.onSpaceKeyPressed();
+        }
+    }
+
+    public void testOnRightKeyPressed(){
+        for (int i = 0; i < 20; i++) {
+            Jwinapi.onRightKeyPressed();
+        }
+    }
+
+    public void testOnLeftKeyPressed(){
+        for (int i = 0; i < 15; i++) {
+            Jwinapi.onLeftKeyPressed();
+        }
+    }
+
     public void testSleepMode(){
-        Jwinapi.sleepMode();
+//        Jwinapi.sleepMode();
     }
 
     public static void main(String[] args) {
         new JwinapiTest().testSetVolumeLevel();
         new JwinapiTest().testGetVolumeLevel();
-        // new JwinapiTest().testSleepMode();
+         new JwinapiTest().testSleepMode();
+        new JwinapiTest().testOnSpaceKeyPressed();
+        new JwinapiTest().testOnRightKeyPressed();
+        new JwinapiTest().testOnLeftKeyPressed();
     }
 }
