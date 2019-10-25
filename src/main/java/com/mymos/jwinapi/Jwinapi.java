@@ -10,7 +10,7 @@ public class Jwinapi {
     public static native double getVolumeLevel ();
     public static native void sleepMode();
 
-    public static native void onSpaceKeyPressed();
-    public static native void onLeftKeyPressed();
-    public static native void onRightKeyPressed();
+    public static native void pressSpaceKey();
+    public static native void pressLeftKey();
+    public static native void pressRightKey();
 }

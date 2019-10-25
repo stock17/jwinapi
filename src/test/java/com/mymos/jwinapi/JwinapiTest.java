@@ -24,21 +24,21 @@ public class JwinapiTest extends TestCase {
         assert d != 0.5;
     }
 
-    public void testOnSpaceKeyPressed(){
+    public void testPressSpaceKey(){
         for (int i = 0; i < 20; i++) {
-            Jwinapi.onSpaceKeyPressed();
+            Jwinapi.pressSpaceKey();
         }
     }
 
-    public void testOnRightKeyPressed(){
+    public void testPressRightKey(){
         for (int i = 0; i < 20; i++) {
-            Jwinapi.onRightKeyPressed();
+            Jwinapi.pressRightKey();
         }
     }
 
-    public void testOnLeftKeyPressed(){
+    public void testPressLeftKey(){
         for (int i = 0; i < 15; i++) {
-            Jwinapi.onLeftKeyPressed();
+            Jwinapi.pressLeftKey();
         }
     }
 
@@ -49,9 +49,9 @@ public class JwinapiTest extends TestCase {
     public static void main(String[] args) {
         new JwinapiTest().testSetVolumeLevel();
         new JwinapiTest().testGetVolumeLevel();
-         new JwinapiTest().testSleepMode();
-        new JwinapiTest().testOnSpaceKeyPressed();
-        new JwinapiTest().testOnRightKeyPressed();
-        new JwinapiTest().testOnLeftKeyPressed();
+        new JwinapiTest().testSleepMode();
+        new JwinapiTest().testPressSpaceKey();
+        new JwinapiTest().testPressRightKey();
+        new JwinapiTest().testPressLeftKey();
     }
 }
