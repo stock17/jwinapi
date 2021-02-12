@@ -1,4 +1,4 @@
-package com.mymos.jwinapi;
+package com.yurima.jwinapi;
 
 public class Jwinapi {
 
