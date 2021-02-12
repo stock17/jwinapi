@@ -6,11 +6,30 @@ public class Jwinapi {
         System.loadLibrary("jwinapi");
     }
 
+    /**
+     * The method sets the volume level of the default audio device
+     *
+     * @param level is the volume level from 0 to 1
+     */
     public static native void setVolumeLevel (double level);
-    public static native double getVolumeLevel ();
-    public static native void sleepMode();
 
-    public static native void pressSpaceKey();
-    public static native void pressLeftKey();
-    public static native void pressRightKey();
+    /**
+     * The method return the volume level of the default audio device
+     *
+     * @return the value from 0 to 1 (100%)
+     */
+    public static native double getVolumeLevel ();
+
+    /**
+     * The method simulates pressing of the key
+     * by its <a href="https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes">virtual code</a>
+     *
+     * @param keycode is a virtual code of the key
+     */
+    public static native void pressKey(int keycode);
+
+    /**
+     * The method activates PC sleep mode
+     */
+    public static native void sleepMode();
 }
