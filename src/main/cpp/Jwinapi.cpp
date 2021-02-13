@@ -1,15 +1,13 @@
-//#include <stdafx.h>
+#include "pch.h"
 #include <stdio.h>      
-#include "Jwinapi.h"    
+#include "Jwinapi.h"
 #include <windows.h>
 #include <mmdeviceapi.h>
 #include <endpointvolume.h>
 #include <PowrProf.h>
 
-
+#pragma comment(lib, "PowrProf.lib")
 #define DLLExport __declspec(dllexport)
-
-using namespace std;
 
 extern "C"
 {
@@ -136,8 +134,6 @@ extern "C"
 	*/
 	JNIEXPORT void JNICALL Java_com_yurima_jwinapi_Jwinapi_sleepMode(JNIEnv * env, jclass clazz)
 	{
-		//SetSuspendState(false, false, false);
+		SetSuspendState(false, false, false);
 	}
 }
-
-
